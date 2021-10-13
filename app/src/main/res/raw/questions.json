@@ -1,0 +1,75 @@
+[
+  {
+    "question": "Purple or Dark Pink",
+    "correctAnswer": "Purple",
+    "incorrectAnswer": "Dark Pink",
+    "red": "230",
+    "green": "230",
+    "blue": "250"
+  },
+  {
+    "question": "Green or Orange",
+    "correctAnswer": "Orange",
+    "incorrectAnswer": "Green",
+    "red": "255",
+    "green": "165",
+    "blue": "0"
+  },
+  {
+    "question": "Blue or Red",
+    "correctAnswer": "Blue",
+    "incorrectAnswer": "Red",
+    "red": "135",
+    "green": "206",
+    "blue": "250"
+  },
+  {
+    "question": "Dark Brown or Dark Green",
+    "correctAnswer": "Dark Brown",
+    "incorrectAnswer": "Dark Green",
+    "red": "78",
+    "green": "53",
+    "blue": "36"
+  },
+  {
+    "question": "Red or Green",
+    "correctAnswer": "Green",
+    "incorrectAnswer": "Red",
+    "red": "8",
+    "green": "200",
+    "blue": "120",
+  },
+  {
+    "question": "Red or Brown",
+    "correctAnswer": "Brown",
+    "incorrectAnswer": "Red",
+    "red": "165",
+    "green": "42",
+    "blue": "42"
+  },
+  {
+    "question": "Blue or Lilac",
+    "correctAnswer": "Blue",
+    "incorrectAnswer": "Lilac",
+    "red": "135",
+    "green": "206",
+    "blue": "250"
+  },
+  {
+    "question": "Blue-Green or grey",
+    "correctAnswer": "Grey",
+    "incorrectAnswer": "Blue-Green",
+    "red": "211",
+    "green": "211",
+    "blue": "211"
+  },
+  {
+    "question": "Green or Yellow",
+    "correctAnswer": "Yellow",
+    "incorrectAnswer": "Green",
+    "red": "255",
+    "green": "255",
+    "blue": "0"
+  }
+
+]
