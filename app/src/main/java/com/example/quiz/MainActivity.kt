@@ -1,9 +1,11 @@
 package com.example.quiz
+
 import android.content.res.Resources
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var rightChoice: Button
     lateinit var color: Button
     lateinit var colorChoice: TextView
-    lateinit var quiz: List<Questions>
+    lateinit var quiz: Quiz
     val TAG = "MainActivity"
 
     private fun wire() {
@@ -38,25 +40,31 @@ class MainActivity : AppCompatActivity() {
         }
         Log.d(TAG, "onCreate: $jsonText")
         val gson = Gson()
-        val type = object : TypeToken<List<Questions>>() { }.type
+        val type = object : TypeToken<List<Questions>>() {}.type
         val questions = gson.fromJson<List<Questions>>(jsonText, type)
         Log.d(TAG, "onCreate: \n${questions.toString()}")
 
-        color.setBackgroundColor(Color.rgb(200,200,200))
+        color.setBackgroundColor(Color.rgb(200, 200, 200))
+        quiz = Quiz(questions)
 
-        fun gameOver(){
+        leftChoice.setOnClickListener {
+
+        }
+        rightChoice.setOnClickListener {
 
         }
     }
-
-    data class Questions(var question: String,
-                         var correctAnswer: String,
-                         var incorrectAnswer: String,
-                         var red: Int,
-                         var green: Int,
-                         var Blue: Int,
-    ){}
 }
+
+data class Questions(
+    var question: String,
+    var correctAnswer: String,
+    var incorrectAnswer: String,
+    var red: Int,
+    var green: Int,
+    var Blue: Int,
+) {}
+
 
 
 

@@ -37,7 +37,7 @@
     "incorrectAnswer": "Red",
     "red": "8",
     "green": "200",
-    "blue": "120",
+    "blue": "120"
   },
   {
     "question": "Red or Brown",
@@ -71,5 +71,4 @@
     "green": "255",
     "blue": "0"
   }
-
 ]
